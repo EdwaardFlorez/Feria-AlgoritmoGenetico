@@ -30,8 +30,8 @@ const InputLoadFile = ({ id, executionAction }) => {
       const {X,Y} = obj;
       /* File Final */
       var objFinal = {
-        "x" : [X],
-        "y" : [Y],
+        "x" : X,
+        "y" : Y,
         "nCiudades": nCiudades,
         "tanPoblacion": tanPoblacion,
         "proCruce": proCruce,
