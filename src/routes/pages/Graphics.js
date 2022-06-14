@@ -1,9 +1,20 @@
-import React from 'react';
+import React from "react";
 
-const Graphics = () => {
-    return (<div>
+import { connect } from "react-redux";
 
-    </div>);
-}
+const Graphics = (props) => {
+  return (
+    <div>
+      <button onClick={() => console.log(props)}>Click me</button>
+    </div>
+  );
+};
 
-export default Graphics;
+/* state is the store object? */
+const mapStateToProps = (state) => {
+  return {
+    genetic: state.genetic,
+  };
+};
+
+export default connect(mapStateToProps)(Graphics);

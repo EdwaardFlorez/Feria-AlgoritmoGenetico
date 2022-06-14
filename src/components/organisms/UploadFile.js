@@ -12,9 +12,9 @@ const UploadFile = () => {
       <div>
         <InputLoadFile id="LoadFile"></InputLoadFile>
       </div>
-      <div className="flex justify-end">
+      {/* <div className="flex justify-end">
         <ButtonSubmit value="Eliminar"></ButtonSubmit>
-      </div>
+      </div> */}
     </div>
   );
 };

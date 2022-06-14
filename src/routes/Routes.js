@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes as RoutesDom } from "react-router-dom";
 
-// Link. react-route-dom
-// import { Link } from "react-router-dom";
+
 
 // Home // Header
 import Menu from "./menu/Menu";
