@@ -27,7 +27,7 @@ const Routes = () => {
           {/* In react-router-dom v6, "Switch" is replaced by routes "Routes" */}
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-          <div className="grow">
+          <div className="grow h-full">
             <RoutesDom className="order-1 sm:order-2">
               <Route path="/" element={<Home />} />
               <Route path="/graphics" element={<Graphics />} />
