@@ -52,7 +52,7 @@ const Graphics = ({ genetic }) => {
     <React.Fragment>
       <div className="Graphics flex flex-col justify-center content-center">
         <p className="text-purple text-4xl">Graficás</p>
-        {helperFuntion}
+        {helperFuntion()}
       </div>
     </React.Fragment>
   );

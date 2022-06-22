@@ -21,6 +21,7 @@ const InputLoadFile = ({ id, executionAction }) => {
     var proCruce = event.target.Pcruce.value;
     var proMutacion = event.target.Pmutacion.value;
     var nunMaxGen = event.target.maxGeneraciones.value;
+    var version = event.target.version.value;
     /* File to Json */
     const fileReader = new FileReader();
     fileReader.readAsText(File, "UTF-8");
@@ -37,6 +38,7 @@ const InputLoadFile = ({ id, executionAction }) => {
         "proCruce": proCruce,
         "proMutacion": proMutacion,
         "nunMaxGen": nunMaxGen,
+        "version": version
       }
       executionAction(objFinal);
       setFiles(coordinates);
@@ -88,6 +90,12 @@ const InputLoadFile = ({ id, executionAction }) => {
             <InputParameters
               value="Probabilidad de mutacion:"
               id="Pmutacion"
+            ></InputParameters>
+          </div>
+          <div className="py-2">
+            <InputParameters
+              value="Version codigo:"
+              id="version"
             ></InputParameters>
           </div>
           <div className="flex justify-end">
